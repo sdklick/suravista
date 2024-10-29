@@ -1,0 +1,532 @@
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header .container1 {
+    width: 50%;
+    text-align: center;
+}
+
+.header .container1 hr {
+    width: 24%;
+    background-color: gray;
+    height: 2px;
+}
+
+.header .container1 p:nth-child(1) {
+    color: rgb(243, 113, 65);
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+.header .container1 p:nth-child(3) {
+    color: orange;
+    font-weight: bold;
+    font-size: 14px;
+    color: gray;
+}
+
+.header .container2 {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .container2 .links,
+.navicon {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .container2 .links p,
+.navicon i {
+    padding: 10px;
+    font-size: 20px;
+    color: gray;
+}
+
+/* header responsive */
+
+@media screen and (max-width: 850px) {
+    .header {
+        height: 200px;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header .container1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header .container2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .header {
+        height: 240px;
+    }
+
+    .header .container2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .header .container2 .links,
+    .navicon {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.background {
+    height: 400px;
+    background-image: url("./assets/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background .bgtitle {
+    width: 40%;
+    height: 500px;
+    position: relative;
+    top: 80px;
+    left: 20px;
+
+}
+
+.background .bgtitle .bgh1,
+.bgp {
+    color: white;
+}
+
+.background .bgtitle button {
+    background-color: rgb(217, 99, 8);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* background responsive */
+
+@media screen and (max-width: 600px) {
+    .background .bgtitle {
+        width: 100%;
+        height: 320px;
+        position: relative;
+        top: 80px;
+        left: 10px;
+        right: 10px
+    }
+
+}
+
+.aboutus {
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.aboutus .abouttext {
+    width: 45%;
+    text-align: justify;
+}
+
+.aboutus .abouttext h1,
+p {
+    color: black;
+}
+
+.aboutus .abouttext button {
+    color: black;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.aboutus .aboutimg {
+    width: 45%;
+    background-image: url("./assets/bg1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 440px;
+}
+
+/* aboutus responsive */
+
+@media screen and (max-width: 500px) {
+    .aboutus {
+        height: 490px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .aboutus .abouttext {
+        width: 95%;
+        text-align: justify;
+    }
+
+    .aboutus .aboutimg {
+        width: 95%;
+        background-image: url("./assets/bg1.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 290px;
+    }
+
+}
+
+
+.corpustext {
+    height: 300px;
+    background-color: rgb(10, 10, 40);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.corpustext .corpush1,
+.corpusp {
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+
+/* corpus responsive */
+
+@media screen and (max-width: 825px) {
+    .corpustext {
+        margin-top: 20px;
+    }
+
+    .corpustext .corpush1,
+    .corpusp {
+        width: 95%;
+    }
+
+    .corpustext .corpush1 {
+        font-size: 20px;
+    }
+}
+
+.card {
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.card div {
+    width: 30%;
+}
+
+.card .insect {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .insect .insectimg {
+    height: 60%;
+    background-image: url("./assets/card1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.card .insect .insecttext {
+    height: 40%;
+    width: 100%;
+}
+
+.card .insect .insecttext .insectbtn {
+    color: white;
+    padding: 12px;
+    border-radius: 15px;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+}
+
+.card .rodent {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .rodent .rodentimg {
+    height: 60%;
+    background-image: url("./assets/card3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.card .rodent .rodenttext {
+    height: 40%;
+    width: 100%;
+
+}
+
+.card .rodent .rodenttext .rodentbtn {
+    color: white;
+    padding: 12px;
+    border-radius: 15px;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+}
+
+.card .bird {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .bird .birdimg {
+    height: 60%;
+    background-image: url("./assets/card2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.card .bird .birdtext {
+    height: 40%;
+    width: 100%;
+
+}
+
+.card .bird .birdtext .birdbtn {
+    color: white;
+    padding: 12px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+}
+
+/* card responsive */
+
+@media screen and (max-width: 690px) {
+
+    .card {
+        height: 1680px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+
+    .card div {
+        width: 100%;
+    }
+
+    .card .insect .insectimg {
+        height: 400px;
+    }
+
+    .card .insect .insecttext {
+        height: 40%;
+        width: 100%;
+    }
+
+    .card .rodent .rodentimg {
+        height: 400px;
+    }
+
+    .card .rodent .rodenttext {
+        height: 40%;
+        width: 100%;
+
+    }
+
+    .card .bird .birdimg {
+        height: 400px;
+    }
+
+    .card .bird .birdtext {
+        height: 40%;
+        width: 100%;
+
+    }
+
+}
+
+.contact {
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    background-color: rgb(10, 10, 40);
+}
+
+.contact .getintouch {
+    width: 45%;
+    text-align: justify;
+
+}
+
+.contact .getintouch .gth1,
+.gtp {
+    color: white;
+
+}
+
+.contact .formbox {
+    width: 45%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact .formbox .box1 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+}
+
+.contact .formbox .box1 .namebox {
+    width: 50%;
+}
+
+.contact .formbox .box1 .namebox label,
+.emailbox label {
+    display: block;
+    font-size: 20px;
+    color: white;
+}
+
+.contact .formbox .box1 .namebox input[type=text],
+.emailbox input[type=email] {
+    padding: 10px;
+    width: 80%;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+}
+
+.contact .formbox .box1 .emailbox {
+    width: 50%;
+}
+
+.contact .formbox .box2 {
+    width: 100%;
+    height: 70%;
+}
+
+.contact .formbox .box2 label {
+    display: block;
+    font-size: 20px;
+    color: white;
+}
+
+.contact .formbox .box2 textarea {
+    height: 85%;
+    width: 93%;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+}
+
+/* contact responsive */
+
+@media screen and (max-width: 610px) {
+
+    .contact {
+        height: 500px;
+        flex-direction: column;
+    }
+    
+    .contact .getintouch {
+        width: 95%;
+    
+    }
+
+    .contact .formbox {
+        width: 95%;
+    }
+    
+}
+
+.footer {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer .container1 {
+    width: 50%;
+    text-align: center;
+}
+
+.footer .container1 hr {
+    width: 24%;
+    background-color: gray;
+    height: 2px;
+}
+
+.footer .container1 p:nth-child(1) {
+    color: rgb(243, 113, 65);
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+.footer .container1 p:nth-child(3) {
+    color: orange;
+    font-weight: bold;
+    font-size: 14px;
+    color: gray;
+}
+
+.footer .container2 {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container2 .navicon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .container2 .navicon i {
+    padding: 10px;
+    font-size: 20px;
+    color: gray;
+}
+
+/* footer responsive */
+
+@media screen and (max-width: 400px) {
+
+    .footer {
+        height: 160px;
+        flex-direction: column;
+    }
+
+    .footer .container1 {
+        width: 100%;
+    }
+
+    .footer .container2 {
+        width: 100%;
+    }
+    
+}
